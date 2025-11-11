@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdTech & MarTech Infographic</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #64748b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        /* Style for the step-by-step flowchart */
+        .step {
+            position: relative;
+            padding-left: 2.5rem; /* Space for icon and line */
+            padding-bottom: 2rem;
+            border-left: 2px dashed #94a3b8;
+        }
+        .step:last-child {
+            border-left: 2px solid transparent;
+            padding-bottom: 0;
+        }
+        .step-icon {
+            position: absolute;
+            left: -1rem; /* Center on the line */
+            top: 0;
+            background-color: #60a5fa; /* blue-400 */
+            color: white;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .step-content {
+            background: #f8fafc; /* slate-50 */
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid #e2e8f0; /* slate-200 */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md w-full sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-3xl font-bold text-slate-900">
+                    <span class="text-blue-500">AdTech/MarTech</span> Infographic
+                </h1>
+                <p class="text-sm text-slate-500 hidden md:block">The Digital Advertising Ecosystem Explained</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Section 1: The Key Players (The "Who") -->
+        <section id="who" class="mb-16">
+            <h2 class="text-4xl font-bold mb-3 text-center text-slate-800">Section 1: The Key Players (The "Who")</h2>
+            <p class="text-lg text-slate-600 text-center mb-10">The main organizations and people involved in a digital ad campaign.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Player Card: Brand (Advertiser) -->
+                <div class="bg-white p-8 rounded-xl shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-700">1. Brand (Advertiser)</h3>
+                    <p class="text-slate-600 mb-4">The company with a product/service to sell (e.g., Nike, Coca-Cola). They are the **investors** who provide the budget.</p>
+                    <div class="font-semibold text-slate-800">Goal: Drive sales or build awareness.</div>
+                </div>
+
+                <!-- Player Card: Publisher -->
+                <div class="bg-white p-8 rounded-xl shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-green-700">2. Publisher</h3>
+                    <p class="text-slate-600 mb-4">The entity with an audience on their website or app (e.g., ESPN.com, NY Times). They are the **sellers** with ad space.</p>
+                    <div class="font-semibold text-slate-800">Goal: Monetize their audience and content.</div>
+                </div>
+
+                <!-- Player Card: Media Agency -->
+                <div class="bg-white p-8 rounded-xl shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-700">3. Media Agency</h3>
+                    <p class="text-slate-600 mb-4">The expert firm hired by the Brand (e.g., Publicis, WPP) to plan, buy, and optimize the ad campaign. They are the **operators**.</p>
+                    <div class="font-semibold text-slate-800">Goal: Achieve the Brand's goals efficiently.</div>
+                </div>
+
+                <!-- Player Card: Tech Provider -->
+                <div class="bg-white p-8 rounded-xl shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-700">4. Tech Provider</h3>
+                    <p class="text-slate-600 mb-4">The company that builds, sells, and maintains the technology (e.g., The Trade Desk, Google, Magnite). They are the **builders** and **enablers**.</p>
+                    <div class="font-semibold text-slate-800">Goal: Sell access to their platforms (DSPs, SSPs, etc.).</div>
+                </div>
+
+                <!-- Player Card: Retailer / Retail Media Network -->
+                <div class="bg-white p-8 rounded-xl shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-orange-700">5. Retailer / RMN</h3>
+                    <p class="text-slate-600 mb-4">The store (e.g., Amazon, Walmart, Target) that also operates a **Retail Media Network (RMN)** (e.g., Valiuz, Unlimitail). They are both **Publishers** and **Data Providers**.</p>
+                    <div class="font-semibold text-slate-800">Goal: Create a new revenue stream from ads and shopper data.</div>
+                </div>
+
+                <!-- Player Card: User -->
+                <div class="bg-white p-8 rounded-xl shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-4 text-red-700">6. User</h3>
+                    <p class="text-slate-600 mb-4">The individual browsing the web or using an app. They are the **target audience** the Brand wants to reach.</p>
+                    <div class="font-semibold text-slate-800">Goal: Find content, be entertained, or shop.</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 2: The AdTech/MarTech World (The "What") -->
+        <section id="what" class="mb-16">
+            <h2 class="text-4xl font-bold mb-3 text-center text-slate-800">Section 2: The AdTech/MarTech World (The "What")</h2>
+            <p class="text-lg text-slate-600 text-center mb-10">The platforms and acronyms that make the system work.</p>
+
+            <!-- AdTech vs MarTech -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-blue-500">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-700">AdTech (Advertising Tech)</h3>
+                    <p class="text-slate-600 mb-4">Focuses on **Paid Media** & **Customer Acquisition**. It's about finding *new* (often anonymous) users and showing them ads.</p>
+                    <span class="font-semibold text-slate-700">Examples: DSPs, SSPs, Ad Exchanges</span>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-cyan-500">
+                    <h3 class="text-2xl font-bold mb-4 text-cyan-700">MarTech (Marketing Tech)</h3>
+                    <p class="text-slate-600 mb-4">Focuses on **Owned Media** & **Customer Retention**. It's about managing and communicating with *known* customers and leads.</p>
+                    <span class="font-semibold text-slate-700">Examples: CRM, Email Platforms, CDP</span>
+                </div>
+            </div>
+
+            <!-- Walled Garden vs. Open Web -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold mb-4 text-red-700">Walled Garden</h3>
+                    <p class="text-slate-600 mb-4">A **closed ecosystem** where the tech, data, and inventory are all owned and controlled by *one company*. They don't let their data out, and they limit outside tech from operating inside.</p>
+                    <span class="font-semibold text-slate-700">Examples: Google (Search, YouTube), Meta (Facebook, Insta), Amazon</span>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-purple-500">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-700">The Open Web</h3>
+                    <p class="text-slate-600 mb-4">The **interchangeable ecosystem** of all other independent publishers, data providers, and tech platforms. They all "plug into" each other to compete with the gardens.</p>
+                    <span class="font-semibold text-slate-700">Examples: The Trade Desk (DSP) + Magnite (SSP) + NY Times (Pub)</span>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold mb-8 text-center text-slate-700">The Core Technologies</h3>
+
+            <!-- Tech Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Card: DSP -->
+                <div id="dsp-card" class="bg-white p-6 rounded-xl shadow-lg cursor-pointer transform transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L8 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">DSP (Demand-Side Platform)</h3>
+                    <p class="text-slate-600 text-sm">Used by Brands/Agencies to **BUY** ad space. An automated bidding desk for advertisers.</p>
+                </div>
+
+                <!-- Card: SSP -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-green-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 13v-1m0 1H4a2 2 0 01-2-2V8a2 2 0 012-2h4v3m0-3h8a2 2 0 012 2v3a2 2 0 01-2 2h-4v-3m0 3v1m0 0v1m0-1h.01M12 16v1m0 0v1m0-1h.01M12 12v1m0 0v1m0-1h.01M12 8v1m0 0v1m0-1h.01M16 12v1m0 0v1m0-1h.01M16 8v1m0 0v1m0-1h.01M16 4v1m0 0v1m0-1h.01M12 4v1m0 0v1m0-1h.01M8 4v1m0 0v1m0-1h.01M4 16v1m0 0v1m0-1h.01M4 12v1m0 0v1m0-1h.01M4 8v1m0 0v1m0-1h.01M20 16v1m0 0v1m0-1h.01M20 12v1m0 0v1m0-1h.01M20 8v1m0 0v1m0-1h.01" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SSP (Supply-Side Platform)</h3>
+                    <p class="text-slate-600 text-sm">Used by Publishers to **SELL** ad space. An automated yield manager for sellers.</p>
+                </div>
+
+                <!-- Card: Ad Exchange -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-purple-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7 16V4m0 12L3 8m4 8l4-8m6 8V4m0 12l4-8m-4 8l-4-8" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Ad Exchange</h3>
+                    <p class="text-slate-600 text-sm">The open marketplace (like a Stock Exchange) where DSPs and SSPs connect to trade ads.</p>
+                </div>
+
+                <!-- Card: DMP -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-yellow-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10m16-10v10M4 17h16M4 7h16H4z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">DMP (Data Management)</h3>
+                    <p class="text-slate-600 text-sm">"Data Warehouse" that collects and segments large, **anonymous** 3rd-party audience data.</p>
+                </div>
+
+                <!-- Card: CDP -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-cyan-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">CDP (Customer Data)</h3>
+                    <p class="text-slate-600 text-sm">"Unified Profile" that collects a Brand's **known** 1st-party customer data (emails, purchases).</p>
+                </div>
+
+                <!-- Card: Ad Server -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-slate-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Ad Server</h3>
+                    <p class="text-slate-600 text-sm">The "delivery truck" that stores, delivers (serves), and counts the ad creatives.</p>
+                </div>
+
+                <!-- Card: Data Clean Room -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-indigo-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 11V7a4 4 0 118 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Data Clean Room (DCR)</h3>
+                    <p class="text-slate-600 text-sm">A "neutral safe" where two parties can match data without sharing it. Key for privacy.</p>
+                </div>
+
+                <!-- Card: Brand Safety -->
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-red-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Brand Safety & Viewability</h3>
+                    <p class="text-slate-600 text-sm">The "referee" that checks for ad fraud, unsafe content, and if the ad was actually seen.</p>
+                </div>
+
+            </div>
+
+            <!-- Ecosystem Image Placeholder -->
+            <div class="mt-12 bg-white p-6 rounded-xl shadow-lg text-center">
+                <h3 class="text-2xl font-bold mb-4 text-slate-700">AdTech Ecosystem Map</h3>
+                <img src="https://placehold.co/800x400/e2e8f0/64748b?text=Ecosystem+Flowchart+Placeholder" 
+                     alt="AdTech Ecosystem Flowchart Placeholder"
+                     class="w-full max-w-4xl mx-auto h-auto rounded-md object-cover mb-2 border-2 border-slate-200">
+                <p class="text-xs text-slate-500 text-center italic">
+                    Note: A diagram like the one from Playwire's "AdTech Landscape" would go here. <br>
+                    Source: playwire.com/blog/adtech-landscape
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Section 3: The 4 Programmatic Buying Models -->
+        <section id="models" class="mb-16">
+            <h2 class="text-4xl font-bold mb-3 text-center text-slate-800">Section 3: The 4 Programmatic Buying Models</h2>
+            <p class="text-lg text-slate-600 text-center mb-10">Not all ad buys are the same. Here are the 4 main types, from open to exclusive.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Model: Open Auction -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-8 border-red-500">
+                    <h3 class="text-xl font-semibold mb-2">1. Open Auction (RTB)</h3>
+                    <p class="text-slate-600 mb-4"><strong>Analogy:</strong> A public, real-time auction. Anyone can bid, and the highest bid wins. It's fully automated.</p>
+                    <p class="text-slate-600 mb-4 text-sm"><strong class="text-slate-800">How it Works:</strong> A user visits. The ad impression is offered to all DSPs. The highest bidder wins in milliseconds. (See Section 4 for details).</p>
+                    <div class="font-semibold text-slate-800">Goal: Maximum reach and scale.</div>
+                </div>
+
+                <!-- Model: Private Marketplace (PMP) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-8 border-orange-500">
+                    <h3 class="text-xl font-semibold mb-2">2. Private Marketplace (PMP)</h3>
+                    <p class="text-slate-600 mb-4"><strong>Analogy:</strong> A private, "velvet rope" auction. Only invited advertisers get to bid on premium inventory.</p>
+                    <p class="text-slate-600 mb-4 text-sm"><strong class="text-slate-800">How it Works:</strong> A Publisher invites specific Brands (via their DSPs) to a private auction. The floor price is higher, but the inventory is better quality.</p>
+                    <div class="font-semibold text-slate-800">Goal: Access to premium inventory.</div>
+                </div>
+
+                <!-- Model: Preferred Deal -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-8 border-blue-500">
+                    <h3 class="text-xl font-semibold mb-2">3. Preferred Deal</h3>
+                    <p class="text-slate-600 mb-4"><strong>Analogy:</strong> A "first right of refusal." A publisher offers a brand a fixed-price deal *before* the inventory goes to auction.</p>
+                    <p class="text-slate-600 mb-4 text-sm"><strong class="text-slate-800">How it Works:</strong> The Publisher and Brand agree on a fixed CPM. The Brand's DSP gets to "peek" at the ad impression first and can buy it at that price. If they pass, it goes to auction.</p>
+                    <div class="font-semibold text-slate-800">Goal: Priority access at a fixed price.</div>
+                </div>
+
+                <!-- Model: Programmatic Guaranteed -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-b-8 border-green-500">
+                    <h3 class="text-xl font-semibold mb-2">4. Programmatic Guaranteed</h3>
+                    <p class="text-slate-600 mb-4"><strong>Analogy:</strong> A "reserved table." A traditional ad buy (e.g., "1 million impressions") automated through tech. No auction.</p>
+                    <p class="text-slate-600 mb-4 text-sm"><strong class="text-slate-800">How it Works:</strong> The Brand and Publisher negotiate a fixed volume and price. The DSP and SSP are used simply to *deliver* the ads. The purchase is guaranteed.</p>
+                    <div class="font-semibold text-slate-800">Goal: Guaranteed delivery (e.g., for a homepage takeover).</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 4: How It Works: RTB Deep Dive (The "How") -->
+        <section id="how" class="mb-16">
+            <h2 class="text-4xl font-bold mb-3 text-center text-slate-800">Section 4: How It Works (Deep Dive)</h2>
+            <p class="text-lg text-slate-600 text-center mb-10">The 100-millisecond journey of an "Open Auction" (RTB) ad.</p>
+            
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-xl">
+                <div class="max-w-3xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="step">
+                        <div class="step-icon">1</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-blue-700">User Visits Site</h3>
+                            <p class="text-slate-600">A user visits a website (the Publisher). The page starts to load.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step">
+                        <div class="step-icon">2</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-green-700">Ad Request</h3>
+                            <p class="text-slate-600">The Publisher's **SSP** sees an ad slot and sends a "bid request" to the **Ad Exchange** with anonymous user data.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step">
+                        <div class="step-icon">3</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-purple-700">Auction Begins</h3>
+                            <p class="text-slate-600">The Ad Exchange broadcasts the request to hundreds of **DSPs** representing different Brands.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="step">
+                        <div class="step-icon">4</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-blue-700">DSPs Analyze & Bid</h3>
+                            <p class="text-slate-600">Each DSP checks its **DMP/CDP** data. If the user matches a Brand's target, it places a bid (e.g., $2.00 CPM).</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="step">
+                        <div class="step-icon">5</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-red-700">Pre-Bid Safety Check</h3>
+                            <p class="text-slate-600">A **Brand Safety** provider instantly scans the page and tells the DSP, "Yes, this page is safe" or "No, don't bid!"</p>
+                        </div>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="step">
+                        <div class="step-icon">6</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-purple-700">Winner Chosen</h3>
+                            <p class="text-slate-600">The Ad Exchange receives all bids. The highest bid ($2.00) wins the auction.</p>
+                        </div>
+                    </div>
+                    <!-- Step 7 -->
+                    <div class="step">
+                        <div class="step-icon">7</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-slate-700">Ad Served</h3>
+                            <p class="text-slate-600">The winning Brand's **Ad Server** is "called" and it delivers the ad creative to the user's screen.</p>
+                        </div>
+                    </div>
+                    <!-- Step 8 -->
+                    <div class="step">
+                        <div class="step-icon">8</div>
+                        <div class="step-content">
+                            <h3 class="text-lg font-semibold text-cyan-700">Measurement</h3>
+                            <p class="text-slate-600">If the user clicks and buys, the Brand's **Analytics** platform attributes the sale to the ad. The Safety provider also reports on **Viewability**.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: The Tech Landscape (The "Which") -->
+        <section id="which" class="mb-16">
+            <h2 class="text-4xl font-bold mb-3 text-center text-slate-800">Section 5: The Tech Landscape (The "Which")</h2>
+            <p class="text-lg text-slate-600 text-center mb-10">Famous company names for each category and their strengths.</p>
+
+            <div class="bg-white rounded-xl shadow-xl overflow-x-auto">
+                <table class="min-w-full divide-y divide-slate-200">
+                    <thead class="bg-slate-100">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Category</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Famous Names</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">Main Strengths & Why They're Famous</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-slate-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-blue-700">DSPs (Buy-Side)</td>
+                            <td class="px-6 py-4 whitespace-normal">Google DV360<br>The Trade Desk (TTD)<br>Amazon DSP</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>DV360:</b> Best-in-class integration with the Google/YouTube ecosystem.<br><b>TTD:</b> The largest *independent* DSP; strong in Connected TV (CTV).<br><b>Amazon:</b> The *only* platform with Amazon's 1st-party shopper data.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-green-700">SSPs (Sell-Side)</td>
+                            <td class="px-6 py-4 whitespace-normal">Google Ad Manager<br>Magnite<br>PubMatic</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>Google:</b> Market dominance; it's the default ad server and SSP for most publishers.<br><b>Magnite:</b> Largest independent SSP; very strong in CTV/video.<br><b>PubMatic:</b> Known for transparency and publisher-focused tools.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-cyan-700">CDPs / DMPs (Data)</td>
+                            <td class="px-6 py-4 whitespace-normal">Salesforce Data Cloud<br>Adobe Real-Time CDP<br>Twilio Segment</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>Salesforce:</b> Unbeatable integration for brands already using Salesforce CRM.<br><b>Adobe:</b> The top choice for enterprises already in the Adobe Experience Cloud.<br><b>Segment:</b> The "plumbing" of customer data; collects from everywhere, sends to everywhere.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-slate-700">Ad Servers</td>
+                            <td class="px-6 py-4 whitespace-normal">Google Campaign Manager 360<br>Google Ad Manager</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>Campaign Manager:</b> The industry standard for brands/agencies to count impressions/clicks.<br><b>Ad Manager:</b> The industry standard for publishers to manage and serve inventory.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-indigo-700">Data Clean Rooms</td>
+                            <td class="px-6 py-4 whitespace-normal">Snowflake<br>LiveRamp Safe Haven<br>Google Ads Data Hub (ADH)<br>Amazon Marketing Cloud (AMC)</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>Snowflake:</b> A data-agnostic "Switzerland" built on its powerful data cloud.<br><b>LiveRamp:</b> Strong in identity resolution and connecting data across partners.<br><b>ADH/AMC:</b> "Walled Garden" DCRs; the only way to get granular data *within* Google & Amazon.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-red-700">Brand Safety</td>
+                            <td class="px-6 py-4 whitespace-normal">Integral Ad Science (IAS)<br>DoubleVerify (DV)<br>Moat (by Oracle)</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>IAS & DV:</b> The "big two" independent referees. They are the industry standard for verifying media quality and safety. They are integrated into almost every DSP.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-semibold text-yellow-700">Analytics</td>
+                            <td class="px-6 py-4 whitespace-normal">Google Analytics 4 (GA4)<br>Adobe Analytics</td>
+                            <td class="px-6 py-4 whitespace-normal text-sm text-slate-600"><b>GA4:</b> The most widely used platform for web/app analytics; the default for most of the internet.<br><b>Adobe:</b> The enterprise-level competitor, known for deep customization.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 6: Real-World Use Cases -->
+        <section id="usecases" class="mb-16">
+            <h2 class="text-4xl font-bold mb-3 text-center text-slate-800">Section 6: Real-World Use Cases</h2>
+            <p class="text-lg text-slate-600 text-center mb-10">Tying it all together: How this tech is used in real strategies.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Use Case 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-700">Use Case 1: Brand on Amazon</h3>
+                    <p class="text-slate-600 mb-6 flex-grow">"I'm a brand (e.g., Logitech) and I want to find new customers for my keyboards by using my *own* customer list on Amazon."</p>
+                    <ol class="list-decimal list-inside space-y-3 text-slate-700">
+                        <li>Brand uploads its customer list to **Amazon Marketing Cloud (DCR)**.</li>
+                        <li>Amazon matches this list with its shoppers *inside* the DCR.</li>
+                        <li>Brand uses **Amazon DSP** to target a "lookalike" audience (people who *look like* their best customers).</li>
+                        <li>Ads are shown on Amazon.com (inventory) and on 3rd-party sites via Amazon's **Ad Exchange**.</li>
+                        <li>Brand measures sales lift directly inside the AMC.</li>
+                    </ol>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-700">Use Case 2: Brand on Open Web</h3>
+                    <p class="text-slate-600 mb-6 flex-grow">"I'm a brand (e.g., an Airline) and I want to run a broad awareness campaign across premium news and travel sites."</p>
+                    <ol class="list-decimal list-inside space-y-3 text-slate-700">
+                        <li>Brand's **Media Agency** logs into **The Trade Desk (DSP)**.</li>
+                        <li>They load their ads from **Google Campaign Manager (Ad Server)**.</li>
+                        <li>They apply **IAS (Brand Safety)** filters to avoid unsafe content.</li>
+                        <li>They buy from **Publishers** (e.g., NY Times, Condé Nast) via **PMPs** (Private Deals) for premium inventory.</li>
+                        <li>They supplement their reach by buying in the **Open Auction** from **SSPs** like Magnite & PubMatic.</li>
+                    </ol>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-xl flex flex-col">
+                    <h3 class="text-2xl font-bold mb-4 text-orange-700">Use Case 3: Retailer Builds an RMN</h3>
+                    <p class="text-slate-600 mb-6 flex-grow">"I'm a retailer (e.g., Carrefour) and I want to monetize my shopper data and website traffic."</p>
+                    
+                    <div class="mb-4">
+                        <strong class="text-slate-800">Phase 1: Managed Service (Crawl/Walk)</strong>
+                        <ol class="list-decimal list-inside space-y-3 text-slate-700 mt-2">
+                            <li>Use **Google Ad Manager (Ad Server)** to run "on-site" display ads.</li>
+                            <li>Use a **Data Clean Room (DCR)** (e.g., Valiuz) to let brands match data.</li>
+                            <li>A brand (e.g., Danone) provides an audience list.</li>
+                            <li>Carrefour's *internal team* uses a **3P DSP** (like TTD) to run "off-site" ads targeting those users.</li>
+                        </ol>
+                    </div>
+
+                    <div>
+                        <strong class="text-slate-800">Phase 2: Self-Service (Run)</strong>
+                        <ol class="list-decimal list-inside space-y-3 text-slate-700 mt-2">
+                            <li>Build/license a **Self-Service DSP** for brands to log into.</li>
+                            <li>Connect their **CDP** data to this DSP for easy targeting.</li>
+                            <li>Brands can now *independently* buy on-site and off-site inventory, creating an automated "walled garden".</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 mt-16 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-2 text-lg font-semibold">AdTech & MarTech Infographic</p>
+            <p class="text-sm text-slate-400">A complete breakdown of the digital advertising ecosystem, its players, and its technologies.</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal for DSP Card -->
+    <div id="dsp-modal" class="hidden fixed inset-0 z-50 overflow-auto bg-slate-900 bg-opacity-75 backdrop-blur-sm transition-opacity">
+        <div class="relative w-full max-w-2xl p-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div class="relative bg-white rounded-xl shadow-2xl p-8">
+                
+                <!-- Close Button -->
+                <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-400 hover:text-red-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </button>
+
+                <h2 class="text-2xl font-bold text-blue-700 mb-4">DSP (Demand-Side Platform)</h2>
+                
+                <!-- Image Placeholder -->
+                <img src="https://placehold.co/600x400/e2e8f0/64748b?text=DSP+Diagram+Placeholder" 
+                     alt="DSP diagram placeholder"
+                     class="w-full h-auto rounded-lg object-cover mb-4 border border-slate-200">
+                
+                <!-- Source Note -->
+                <p class="text-sm text-slate-500 text-center">
+                    Source: <a href="#" class="text-blue-500 underline hover:text-blue-700">[Your Image Source Link Here]</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dspCard = document.getElementById('dsp-card');
+            const modal = document.getElementById('dsp-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+
+            // Function to open the modal
+            function openModal() {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+
+            // Function to close the modal
+            function closeModal() {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+
+            // Event Listeners
+            dspCard.addEventListener('click', openModal);
+            closeModalBtn.addEventListener('click', closeModal);
+            
+            // Close modal by clicking on the background overlay
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
